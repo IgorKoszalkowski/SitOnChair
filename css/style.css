@@ -106,6 +106,17 @@ padding: 0;
 list-style: none;
 }
 
+header nav ul.dropdown:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid black;
+
+}
+
 header nav > ul {
 position: relative;
 }
@@ -117,11 +128,13 @@ padding: 10px 25px;
 
 header nav > ul > li:hover .dropdown {
 display: block;
+margin-top: 20px;
 }
 
 header nav ul.dropdown{
 position: absolute;
 display: none;
+margin-top: 15px;
 background-color: black;
 }
 
@@ -130,6 +143,7 @@ color: white;
 padding: 5px 15px;
 display:block;
 }
+
 
 /*Section info*/
 
@@ -280,7 +294,7 @@ margin-left: 15px;
 
 .price-info {
 background-color: #f4eeed;
-height: 800px;
+height: 720px;
 margin-top: 40px;
 padding-top: 3px;
 }
@@ -457,7 +471,6 @@ width: 600px;
 height: 50px;
 margin: 5px;
 font-size: 25px;
-color: #D7D7D8
 }
 
 .msg  {
@@ -466,9 +479,13 @@ width: 600px;
 height: 200px;
 margin: 5px;
 font-size: 25px;
-color: #D7D7D8;
 }
 
+input::placeholder,
+textarea::placeholder {
+	color: #e1dbd9;
+	padding-left: 15	px;
+}
 .form-img img {
 height: 70%;
 width: 70%;
