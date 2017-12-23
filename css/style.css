@@ -114,6 +114,8 @@ header nav ul.dropdown:before {
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 	border-bottom: 10px solid black;
+	margin-top: -9px;
+	margin-left: 38px;
 
 }
 
@@ -134,7 +136,7 @@ margin-top: 20px;
 header nav ul.dropdown{
 position: absolute;
 display: none;
-margin-top: 15px;
+
 background-color: black;
 }
 
