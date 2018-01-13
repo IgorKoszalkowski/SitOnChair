@@ -1,6 +1,6 @@
 My First project.
 
 Technology used:
-html
-css/sass
-js
+1. html
+2. css/sass
+3. js
