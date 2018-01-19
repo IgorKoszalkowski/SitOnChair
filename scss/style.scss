@@ -620,7 +620,6 @@ margin-top: 27px;
 	.col-sm-12 {
 		background-color: white;
 		border: solid 1px black;
-		margin: 2px;
 	}
 	.col-sm-8, .col-sm-4 {
 		height: 200px;
@@ -644,11 +643,10 @@ margin-top: 27px;
 		background-color: white;
 		border:solid 1px #38C9C0;;
 		line-height: 50px;
-		&:before {
+		position:relative;
+		.arrow {
 			content: "";
 			position: absolute;
-			width: 0;
-			height: 0;
 			border-left: 10px solid transparent;
 			border-right: 10px solid transparent;
 			border-top: 15px solid #38C9C0;
@@ -656,31 +654,55 @@ margin-top: 27px;
 			margin-left: 240px;
 		}
 	}
-	.drop1, .drop2, .drop3 {
+	.drop1, .drop2, .drop3{
 		background-color: white;
-		border:solid 1px rgb(208, 202, 197);
+		border-top:solid 1px rgb(208, 202, 197);
 		display: none;
 		list-style: none;
+		font-size: 14px;
+		line-height: 16px;
+		text-align: left;
+		width: 113%;
+		margin-left:-40px;
 		}
 	}
 
-	.col-4 {
+  .col-4 {
 		display:inline-block;
 		float:left;
 		width: 33%;
-		 margin: 1px;
-		 height: 400px;
+		margin: 1px;
+		height: 400px;
 		 .row-1{
 			 display:inline-flex;
 			 flex-flow: row;
 		 }
 		 h2 {
 			 font-weight: 400;
-			 border-bottom: 2px solid #38C9C0;
+			 font-size: 20px;
+			 color: grey;
+			 line-height: 30px;
+			 text-transform: uppercase;
+			 margin-bottom: 10px;
 		 }
-
-
-	}
+		 .underline {
+			 border-top: 2px solid #38C9C0;
+			 width: 150px;
+			 height: 10px;
+			 margin-bottom:30px;
+		 }
+		 .h2-r {
+			 justify-content: flex-end;
+			  border-bottom: 2px solid #38C9C0;
+				width: 150px;
+		 }
+		 .chk1 {
+		 	>:checked:before {
+  		background-image: url('/images/form_ok.jpg');
+  		background-position: center;
+  			}​
+		  }
+	  }
 
 
 /*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlcyI6WyJzdHlsZS5zY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIlxuICAuYmx1cjEsXG4gIC5ibHVyMlxuICBzcGFuIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgJjpob3ZlciB7XG4gIGRpc3BsYXk6IG5vbmU7XG4gICAgfVxuICB9XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0UsQUFBQSxNQUFNO0FBQ04sQUFDQSxNQURNO0FBQ04sSUFBSSxDQUFDO0VBQ0gsT0FBTyxFQUFFLEtBQUssR0FJZjtFQVBELEFBSUEsTUFKTSxBQUlQLE1BQVE7RUFIUCxBQUNBLE1BRE07QUFDTixJQUFJLEFBRUwsTUFBUSxDQUFDO0lBQ1IsT0FBTyxFQUFFLElBQUksR0FDViJ9 */
