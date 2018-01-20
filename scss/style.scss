@@ -616,26 +616,44 @@ margin-top: 27px;
 .calculator {
   background-color: rgb(245, 242, 242);
   height: 500px;
-	.col-sm-8, .col-sm-4,
+	.col-sm-8,
+	.col-sm-4,
 	.col-sm-12 {
 		background-color: white;
-		border: solid 1px black;
+		border: solid 1px grey;
 	}
 	.col-sm-8, .col-sm-4 {
-		height: 200px;
+		height: 150px;
+		text-align: left;
+		>span {
+			padding-top: 10px;
+			color: #38C9C0;
+			font-size: 20px;
+			text-transform: uppercase;
+			p {
+				font-size: 12px;
+				line-height: 15px;
+			}
+		}
 	}
 	.col-sm-8 {
-		width: 10em;
+		width: 14em;
 	}
 	.col-sm-4 {
 		width: 5em;
 	}
 	.col-sm-12 {
-		height: 100px;
-		width: 15em;
+		height: 50px;
+		width: 19em;
 	}
 	.col-4-r {
 		float:right;
+	}
+	.redchair {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: -20px;
 	}
 	.origin, .color, .fabric {
 		font-size: 18px;
@@ -665,14 +683,40 @@ margin-top: 27px;
 		width: 113%;
 		margin-left:-40px;
 		}
+	button.submit {
+		margin-top: 30px;
+		margin-left: 50px;
+		text-transform: uppercase;
+		background-color:#38C9C0;
+		text-decoration: none;
+		height: 50px;
+		width: 200px;
+		border:none;
+		border-radius: 5px;
+		color: white;
+		font-size: 20px;
+		}
 	}
 
   .col-4 {
 		display:inline-block;
 		float:left;
 		width: 33%;
-		margin: 1px;
+		margin-top: 20px;
 		height: 400px;
+		padding: 10px;
+		.chk1 {
+			input[type=checkbox]:checked:before {
+ 		 background-image: url("../images/form_ok.jpg");
+ 		 background-position: center;
+	 		}
+	 		span {
+				margin-top: 15px;
+				margin-right: -10px;
+		 		font-size:30px;
+				color: darkgrey;
+	 		}
+		}
 		 .row-1{
 			 display:inline-flex;
 			 flex-flow: row;
@@ -681,28 +725,14 @@ margin-top: 27px;
 			 font-weight: 400;
 			 font-size: 20px;
 			 color: grey;
-			 line-height: 30px;
+			 line-height: 20px;
 			 text-transform: uppercase;
-			 margin-bottom: 10px;
-		 }
-		 .underline {
-			 border-top: 2px solid #38C9C0;
-			 width: 150px;
-			 height: 10px;
-			 margin-bottom:30px;
+			 border-bottom: 2px solid #38C9C0;
 		 }
 		 .h2-r {
 			 justify-content: flex-end;
 			  border-bottom: 2px solid #38C9C0;
 				width: 150px;
+
 		 }
-		 .chk1 {
-		 	>:checked:before {
-  		background-image: url('/images/form_ok.jpg');
-  		background-position: center;
-  			}​
-		  }
 	  }
-
-
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlcyI6WyJzdHlsZS5zY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIlxuICAuYmx1cjEsXG4gIC5ibHVyMlxuICBzcGFuIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgJjpob3ZlciB7XG4gIGRpc3BsYXk6IG5vbmU7XG4gICAgfVxuICB9XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0UsQUFBQSxNQUFNO0FBQ04sQUFDQSxNQURNO0FBQ04sSUFBSSxDQUFDO0VBQ0gsT0FBTyxFQUFFLEtBQUssR0FJZjtFQVBELEFBSUEsTUFKTSxBQUlQLE1BQVE7RUFIUCxBQUNBLE1BRE07QUFDTixJQUFJLEFBRUwsTUFBUSxDQUFDO0lBQ1IsT0FBTyxFQUFFLElBQUksR0FDViJ9 */
